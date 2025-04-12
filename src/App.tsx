@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="min-h-screen bg-offwhite">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md text-gray-800' : 'bg-transparent text-white'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -40,15 +40,15 @@ function App() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="nav-link">Features</a>
-              <a href="#products" className="nav-link">Products</a>
-              <a href="#impact" className="nav-link">Impact</a>
+              <a href="#features" className={`nav-link ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Features</a>
+              <a href="#products" className={`nav-link ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Products</a>
+              <a href="#impact" className={`nav-link ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Impact</a>
               <button className="btn-primary">Get Started</button>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-inherit">
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
