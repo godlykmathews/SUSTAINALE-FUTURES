@@ -163,7 +163,7 @@ function App() {
               <p className="text-gray-600">Designed for a sustainable future.</p>
             </div>
             <div className="text-center animate-fade-in">
-              <img src="./bottllee.png" alt="Stylish & Durable" className="mx-auto mb-4 w-32 h-32 object-cover" />
+              <img src="./bottllee.png" alt="Stylish & Durable" className="mx-auto mb-4 w-32 h-27 object-cover" />
               <h3 className="text-xl font-bold">Stylish & Durable</h3>
               <p className="text-gray-600">Combining fashion with functionality.</p>
             </div>
